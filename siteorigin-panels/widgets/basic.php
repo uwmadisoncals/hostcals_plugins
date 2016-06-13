@@ -23,8 +23,9 @@ class SiteOrigin_Panels_Widgets_Layout extends WP_Widget {
 	function widget($args, $instance) {
 		if( empty($instance['panels_data']) ) return;
 
-		if( is_string( $instance['panels_data'] ) )
+		if( is_string( $instance['panels_data'] ) ) {
 			$instance['panels_data'] = json_decode( $instance['panels_data'], true );
+		}
 		if(empty($instance['panels_data']['widgets'])) return;
 
 		if( empty( $instance['builder_id'] ) ) $instance['builder_id'] = uniqid();
@@ -36,6 +37,16 @@ class SiteOrigin_Panels_Widgets_Layout extends WP_Widget {
 
 	function update($new, $old) {
 		$new['builder_id'] = uniqid();
+
+		if( is_string($new['panels_data']) && ! empty( $new['panels_data'] ) ) {
+			// This is still in a string format, so we'll convert it to an array for sanitization
+			$new['panels_data'] = json_decode( $new['panels_data'], true );
+		}
+
+		if ( ! empty( $new['panels_data'] ) && ! empty( $new['panels_data']['widgets'] ) ) {
+			$new['panels_data']['widgets'] = siteorigin_panels_process_raw_widgets( $new['panels_data']['widgets'] );
+		}
+
 		return $new;
 	}
 
@@ -45,23 +56,29 @@ class SiteOrigin_Panels_Widgets_Layout extends WP_Widget {
 			'builder_id' => uniqid(),
 		) );
 
-		if( !is_string( $instance['panels_data'] ) ) $instance['panels_data'] = json_encode( $instance['panels_data'] );
+		if( ! is_string( $instance['panels_data'] ) ) {
+			$instance['panels_data'] = json_encode( $instance['panels_data'] );
+		}
 
 		?>
-		<div class="siteorigin-page-builder-widget siteorigin-panels-builder" id="siteorigin-page-builder-widget-<?php echo esc_attr( $instance['builder_id'] ) ?>" data-builder-id="<?php echo esc_attr( $instance['builder_id'] ) ?>" data-type="layout_widget">
+		<div class="siteorigin-page-builder-widget" id="siteorigin-page-builder-widget-<?php echo esc_attr( $instance['builder_id'] ) ?>" data-builder-id="<?php echo esc_attr( $instance['builder_id'] ) ?>" data-type="layout_widget">
 			<p>
-				<a href="#" class="button-secondary siteorigin-panels-display-builder" ><?php _e('Open Builder', 'siteorigin-panels') ?></a>
+				<button class="button-secondary siteorigin-panels-display-builder" ><?php _e('Open Builder', 'siteorigin-panels') ?></button>
 			</p>
 
 			<input type="hidden" data-panels-filter="json_parse" value="" class="panels-data" name="<?php echo $this->get_field_name('panels_data') ?>" id="<?php echo $this->get_field_id('panels_data') ?>" />
+
 			<script type="text/javascript">
-				document.getElementById('<?php echo $this->get_field_id('panels_data') ?>').value = decodeURIComponent("<?php echo rawurlencode( $instance['panels_data'] ); ?>");
+				( function( panelsData ){
+					// Create the panels_data input
+					document.getElementById('<?php echo $this->get_field_id('panels_data') ?>').value = JSON.stringify( panelsData );
+				} )( <?php echo $instance['panels_data']; ?> );
 			</script>
 
 			<input type="hidden" value="<?php echo esc_attr( $instance['builder_id'] ) ?>" name="<?php echo $this->get_field_name('builder_id') ?>" />
 		</div>
 		<script type="text/javascript">
-			if(typeof jQuery.fn.soPanelsSetupBuilderWidget != 'undefined' && !jQuery('body').hasClass('wp-customizer')) {
+			if( typeof jQuery.fn.soPanelsSetupBuilderWidget != 'undefined' && !jQuery('body').hasClass('wp-customizer') ) {
 				jQuery( "#siteorigin-page-builder-widget-<?php echo esc_attr( $instance['builder_id'] ) ?>").soPanelsSetupBuilderWidget();
 			}
 		</script>
@@ -182,7 +199,7 @@ class SiteOrigin_Panels_Widgets_PostLoop extends WP_Widget{
 		//If Widgets Bundle post selector is available and a posts query has been saved using it.
 		if ( function_exists( 'siteorigin_widget_post_selector_process_query' ) && ! empty( $instance['posts'] ) ) {
 			$query_args = siteorigin_widget_post_selector_process_query($instance['posts']);
-			$instance['additional'] = $query_args['additional'];
+			$query_args['additional'] = empty($instance['additional']) ? array() : $instance['additional'];
 		}
 		else {
 			if ( ! empty( $instance['posts'] ) ) {
@@ -203,6 +220,9 @@ class SiteOrigin_Panels_Widgets_PostLoop extends WP_Widget{
 			unset($query_args['template']);
 			unset($query_args['title']);
 			unset($query_args['sticky']);
+			if (empty($query_args['additional'])) {
+				$query_args['additional'] = array();
+			}
 		}
 		$query_args = wp_parse_args($query_args['additional'], $query_args);
 		unset($query_args['additional']);
@@ -257,7 +277,7 @@ class SiteOrigin_Panels_Widgets_PostLoop extends WP_Widget{
 		}
 
 		global $more; $old_more = $more; $more = empty($instance['more']);
-
+		self::$rendering_loop = true;
 		if(strpos('/'.$instance['template'], '/content') !== false) {
 			while( have_posts() ) {
 				the_post();
@@ -267,12 +287,19 @@ class SiteOrigin_Panels_Widgets_PostLoop extends WP_Widget{
 		else {
 			locate_template($instance['template'], true, false);
 		}
+		self::$rendering_loop = false;
 
 		echo $args['after_widget'];
 
 		// Reset everything
 		wp_reset_query();
 		$depth--;
+	}
+
+	static $rendering_loop;
+
+	static function is_rendering_loop() {
+		return self::$rendering_loop;
 	}
 
 	/**
