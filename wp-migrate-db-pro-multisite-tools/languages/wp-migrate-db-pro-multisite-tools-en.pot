@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-migrate-db-pro-multisite-tools\n"
+"Report-Msgid-Bugs-To: nom@deliciousbrains.com\n"
+"POT-Creation-Date: 2015-09-21 10:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: class/wpmdbpro-multisite-tools.php:68
+msgid "Migration failed"
+msgstr ""
+
+#: class/wpmdbpro-multisite-tools.php:69
+msgid "Please select a subsite."
+msgstr ""
+
+#: class/wpmdbpro-multisite-tools.php:70
+msgid "Please enter a new table prefix."
+msgstr ""
+
+#: class/wpmdbpro-multisite-tools.php:71
+msgid ""
+"Please only enter letters, numbers or underscores for the new table prefix."
+msgstr ""
+
+#: template/migrate.php:10
+msgid "Export a subsite as a single site install"
+msgstr ""
+
+#: template/migrate.php:18
+msgid "Select a subsite"
+msgstr ""
+
+#: template/migrate.php:35
+msgid "New Table Name Prefix"
+msgstr ""
+
+#: template/migrate.php:36
+msgid "New Prefix"
+msgstr ""

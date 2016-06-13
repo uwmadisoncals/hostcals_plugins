@@ -1,0 +1,6 @@
+= 1.0.2 3/19/2012 =
+* BUG: Fixed scenario where entry data duplication may occur..
+
+= 1.0.1 2/16/2012 =
+* BUG: Remove deprecated admin node menu item.
+* BUG: Move admin bar init to the plugin init method because the edit my directory entry menu was not showing on the front end of the site.

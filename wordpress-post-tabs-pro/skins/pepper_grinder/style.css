@@ -1,0 +1,148 @@
+/************************************************
+ * jQuery UI CSS Framework 1.9.2
+ * http://jqueryui.com
+ * Released under the MIT license.
+ * http://jquery.org/license
+ * CSS added for WPTS PRO 
+************************************************/
+/************************************************
+*	wordpress-post-tabs-skin-pepper_grinder				*
+************************************************/
+/* Layout helpers
+----------------------------------*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-hidden { display: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-hidden-accessible { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-clearfix:before, .wordpress-post-tabs-skin-pepper_grinder .ui-helper-clearfix:after { content: ""; display: table; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-clearfix:after { clear: both; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-clearfix { zoom: 1; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+/* Interaction Cues
+----------------------------------*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-disabled { cursor: default !important; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.wordpress-post-tabs-skin-pepper_grinder .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 0; margin: 1px .2em 0 0;padding: 0; white-space: nowrap; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li.ui-state-active a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li.ui-state-disabled a,.wordpress-post-tabs-skin-pepper_grinder  .ui-tabs .ui-tabs-nav li.ui-tabs-loading a { cursor: text; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-panel { display: block; border: 0; padding: 1em 1.4em; background: none; }
+/* Component containers
+----------------------------------*/
+/*.wordpress-post-tabs-skin-pepper_grinder .ui-widget { font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif; font-size: 1.1em; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget .ui-widget { font-size: 1em; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget input, .wordpress-post-tabs-skin-pepper_grinder .ui-widget select, .wordpress-post-tabs-skin-pepper_grinder .ui-widget textarea, .wordpress-post-tabs-skin-pepper_grinder .ui-widget button { font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif; font-size: 1em; }*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-content { border: 1px solid #d9d6c4; background: #eceadf url(images/ui-bg_fine-grain_10_eceadf_60x60.png) 50% 50% repeat; color: #1f1f1f; }
+/*.wordpress-post-tabs-skin-pepper_grinder .ui-widget-content a { color: #1f1f1f; }*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-header { border: 1px solid #d4d1bf; background: #ffffff url(images/ui-bg_fine-grain_15_ffffff_60x60.png) 50% 50% repeat; color: #453821; font-weight: bold; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-header a { color: #453821; }
+
+/* Interaction states
+----------------------------------*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-default, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-default, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-default { border: 1px solid #cbc7bd; background: #f8f7f6 url(images/ui-bg_fine-grain_10_f8f7f6_60x60.png) 50% 50% repeat; font-weight: bold; color: #654b24; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-default a, .wordpress-post-tabs-skin-pepper_grinder .ui-state-default a:link, .wordpress-post-tabs-skin-pepper_grinder .ui-state-default a:visited { color: #654b24; text-decoration: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-hover, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-hover, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-hover { border: 1px solid #654b24; background: #654b24 url(images/ui-bg_fine-grain_65_654b24_60x60.png) 50% 50% repeat; font-weight: bold; color: #ffffff; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-hover a, .wordpress-post-tabs-skin-pepper_grinder .ui-state-hover a:hover, .wordpress-post-tabs-skin-pepper_grinder .ui-state-hover a:link, .wordpress-post-tabs-skin-pepper_grinder .ui-state-hover a:visited { color: #ffffff; text-decoration: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-active, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-active, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-active { border: 1px solid #d9d6c4; background: #eceadf url(images/ui-bg_fine-grain_15_eceadf_60x60.png) 50% 50% repeat; font-weight: bold; color: #140f06; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-active a, .wordpress-post-tabs-skin-pepper_grinder .ui-state-active a:link, .wordpress-post-tabs-skin-pepper_grinder .ui-state-active a:visited { color: #140f06; text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-highlight, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-highlight, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-highlight  {border: 1px solid #b2a266; background: #f7f3de url(images/ui-bg_fine-grain_15_f7f3de_60x60.png) 50% 50% repeat; color: #3a3427; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-highlight a, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-highlight a,.wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-highlight a { color: #3a3427; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-error, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-error, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-error {border: 1px solid #681818; background: #b83400 url(images/ui-bg_fine-grain_68_b83400_60x60.png) 50% 50% repeat; color: #ffffff; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-error a, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-error a, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-error a { color: #ffffff; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-error-text, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-error-text, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-priority-primary, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-priority-primary, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-priority-secondary, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-priority-secondary,  .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-disabled, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-content .ui-state-disabled, .wordpress-post-tabs-skin-pepper_grinder .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-state-disabled .ui-icon { filter:Alpha(Opacity=35); } /* For IE8 - See #6059 */
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-all, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-top, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-left, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-all, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-top, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-right, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-all, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-bottom, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-left, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-all, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-bottom, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-right, .wordpress-post-tabs-skin-pepper_grinder .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+/* Overlays */
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-overlay { background: #6e4f1c url(images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png) 50% 50% repeat; opacity: .6;filter:Alpha(Opacity=60); }
+.wordpress-post-tabs-skin-pepper_grinder .ui-widget-shadow { margin: 0 0 0 -10px; padding: 5px; background: #000000 url(images/ui-bg_diagonal-maze_40_000000_10x10.png) 50% 50% repeat; opacity: .6;filter:Alpha(Opacity=60); -moz-border-radius: 18px; -khtml-border-radius: 18px; -webkit-border-radius: 18px; border-radius: 18px; }
+
+/**************************************************
+* wordpress-post-tabs-skin-pepper_grinder ui-tabs *
+**************************************************/
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav { list-style: none; position: relative; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li { position: relative; list-style:none !important}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; outline:none;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li.ui-state-active a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; outline:none; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-nav li a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a { cursor: pointer;border:none; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-panel {display: block;}
+/*So that Google maps within tabs are visible*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs .ui-tabs-hide { position: absolute; left: -10000px; }
+
+/*Start - Link*/
+.wordpress-post-tabs-skin-pepper_grinder .wpts_ext {list-style: none; float: left; position: relative; top: 0; margin: 1px .2em 0 0;padding: 0; white-space: nowrap; border: 1px solid #cbc7bd; background: #f8f7f6 url(images/ui-bg_fine-grain_10_f8f7f6_60x60.png) 50% 50% repeat; font-weight: bold; color: #654b24;}
+.wordpress-post-tabs-skin-pepper_grinder .wpts_ext a{ float: left; padding: .5em 1em; color: #654b24; text-decoration: none; border:none;}
+.wordpress-post-tabs-skin-pepper_grinder .wpts_ext_icon {content:url(images/external_link.png); width: 12px; margin-left: 5px; vertical-align:top;}
+/*End - Link CSS*/
+
+/*Left Sided Tabs*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left{padding:.5em;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .ui-tabs-nav { float: left; padding: 0 2px 0 .2em;border-right:0px;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing: border-box;max-width:30%;width:100%;}
+.wordpress-post-tabs-skin-pepper_grinder  .ui-tabs-vertical-left .ui-tabs-nav li, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .wpts_ext { float: left; clear: left; width: 100%; border-bottom-width: 1px !important; margin: 0.2em 0 0.2em 0; white-space:normal;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .ui-tabs-nav li a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .wpts_ext a { display:block; padding:.5em 10%;width:80%;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .ui-tabs-nav li.ui-state-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .ui-tabs-panel { padding: 0; float: right; width: 70%;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .ui-tabs-nav li.ui-state-active { margin-right: -1px; padding-right: 1px; border-right:0px;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-left .wpts_ext{-moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px;-moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px;}
+
+/*Right Sided Tabs*/
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right{padding:.5em;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-nav { float: right; padding: 0 .2em 0 2px; border-left:0px;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing: border-box;max-width:30%;width:100%;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-nav li, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .wpts_ext { float: right; clear: right; width: 100%; border-bottom-width: 1px !important; border-left-width: 1px !important; margin: .2em 0 .2em 0; white-space:normal;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-nav li a, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .wpts_ext a { display:block; padding:.5em 10%;width:80%;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-nav li.ui-state-active { padding-bottom: 0; padding-left: .1em; border-left-width: 1px; border-left-width: 1px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-panel { padding: 0; float: left; width: 70%;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .ui-tabs-nav li.ui-state-active { margin-left: -1px; padding-left: 1px; border-left:0px;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-vertical-right .wpts_ext{-moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px;-moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px;}
+
+/*Top Tabs */
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-top, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-horizontal-top .wpts_ext {border-top-width: 1px !important; border-bottom-width: 0px !important;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-nav li.ui-corner-top.ui-state-active { margin-bottom: -1px; padding-bottom: 1px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-horizontal-top .wpts_ext{-moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px;-moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px;}
+
+/*Bottom Tabs */
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-horizontal-bottom .ui-tabs-nav { padding: 0 .2em .2em .2em;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-corner-bottom, .wordpress-post-tabs-skin-pepper_grinder .ui-tabs-horizontal-bottom .wpts_ext {border-top-width: 0px !important; border-bottom-width: 1px !important;}
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-nav li.ui-corner-bottom.ui-state-active { margin-top: -1px; padding-top: 1px; }
+.wordpress-post-tabs-skin-pepper_grinder .ui-tabs-horizontal-bottom .wpts_ext{-moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px;-moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px;}
+
+/*Prev Next Button*/
+.wordpress-post-tabs-skin-pepper_grinder a.wpts-mover { border: 1px solid #654b24; background: #654b24 url(images/ui-bg_fine-grain_65_654b24_60x60.png) 50% 50% repeat; font-weight: normal; color: #ffffff; padding: 3px 6px; text-decoration: none; margin-bottom:0.8em; -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px;-moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px;-moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px;-moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+/************************************************
+* WPTS PRO Basic Styles
+************************************************/
+.wordpress-post-tabs-skin-pepper_grinder .wpts_spacer{margin:5px 0 0 0 !important}
+.wpts-hide .wordpress-post-tabs-skin-pepper_grinder{ display: none; }
+.wordpress-post-tabs-skin-pepper_grinder .wpts-next-tab{ float:right;}
+.wordpress-post-tabs-skin-pepper_grinder .wpts-prev-tab{ float:left;}
+.wordpress-post-tabs-skin-pepper_grinder .wpts_cl{display:block;visibility:hidden;clear:left;height:0;content:".";}
+.wordpress-post-tabs-skin-pepper_grinder .wpts_cr{display:block;visibility:hidden;clear:right;height:0;content:".";}

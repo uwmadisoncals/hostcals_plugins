@@ -1,0 +1,50 @@
+.outer_more form{ 
+	text-align: left;
+}
+.more_inner {
+	text-align: center;
+	font-size: 12px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #fff;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #c0c0c0;
+	width: 7em;
+	cursor: pointer;
+}
+.more_sep {
+	width: 92%;
+	border: 1px none;
+	height: 1px;
+	color: #E2E2E2;
+	background-color: #E2E2E2;
+	margin: 4px auto;
+}
+.more_button {
+	border: 1px solid black;
+}
+.more_inner.highlight {
+	font-weight: bold;
+	border: 1px solid #483D8B;
+	border-right-color: #6495ed;
+	border-bottom-color: #6495ed;
+}
+.box_more {
+	font-size: 12px;
+	padding: 6px 4px;
+	width: 120px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid gray;
+	border-top: 1px solid #e2e2e2;
+	display: none;
+	cursor: default;
+}
+.boxlink {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+.boxlink.highlight  { 
+	cursor: pointer;
+}

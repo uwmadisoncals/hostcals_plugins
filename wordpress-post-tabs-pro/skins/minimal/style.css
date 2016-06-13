@@ -1,0 +1,129 @@
+/************************************************
+ * jQuery UI CSS Framework 1.9.2
+ * http://jqueryui.com
+ * Released under the MIT license.
+ * http://jquery.org/license
+ * CSS added for WPTS PRO 
+************************************************/
+/************************************************
+*	.wordpress-post-tabs-skin-minimal				*
+************************************************/
+/* Layout helpers
+----------------------------------*/
+.wordpress-post-tabs-skin-minimal .ui-helper-hidden { display: none; }
+.wordpress-post-tabs-skin-minimal .ui-helper-hidden-accessible { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.wordpress-post-tabs-skin-minimal .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.wordpress-post-tabs-skin-minimal .ui-helper-clearfix:before, .wordpress-post-tabs-skin-minimal .ui-helper-clearfix:after { content: ""; display: table; }
+.wordpress-post-tabs-skin-minimal .ui-helper-clearfix:after { clear: both; }
+.wordpress-post-tabs-skin-minimal .ui-helper-clearfix { zoom: 1; }
+.wordpress-post-tabs-skin-minimal .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+/* Interaction Cues
+----------------------------------*/
+.wordpress-post-tabs-skin-minimal .ui-state-disabled { cursor: default !important; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.wordpress-post-tabs-skin-minimal .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.wordpress-post-tabs-skin-minimal .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.wordpress-post-tabs-skin-minimal .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav { margin: 0; padding: 0 0 0.5em 0; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 0; margin: 1px .2em 0 0;padding: 0; white-space: nowrap; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none;outline: none; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li.ui-state-active a, .wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li.ui-state-disabled a,.wordpress-post-tabs-skin-minimal  .ui-tabs .ui-tabs-nav li.ui-tabs-loading a { cursor: text; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li a, .wordpress-post-tabs-skin-minimal .ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-panel { display: block; border: 0; padding: 0; background: transparent; }
+
+/* Component containers
+----------------------------------*/
+/*.wordpress-post-tabs-skin-minimal .ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.wordpress-post-tabs-skin-minimal .ui-widget .ui-widget { font-size: 1em; }
+.wordpress-post-tabs-skin-minimal .ui-widget input, .wordpress-post-tabs-skin-minimal .ui-widget select, .wordpress-post-tabs-skin-minimal .ui-widget textarea, .wordpress-post-tabs-skin-minimal .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }*/
+.wordpress-post-tabs-skin-minimal .ui-widget-content { border: none; background: transparent; }
+.wordpress-post-tabs-skin-minimal .ui-widget-header { border: none; background: transparent; color: #222222; font-weight: bold; }
+.wordpress-post-tabs-skin-minimal .ui-widget-header a { color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.wordpress-post-tabs-skin-minimal .ui-state-default, .wordpress-post-tabs-skin-minimal .ui-widget-content .ui-state-default, .wordpress-post-tabs-skin-minimal .ui-widget-header .ui-state-default { border: 1px solid #dddddd; background: #eeeeee; font-weight: normal; color: #444444; }
+.wordpress-post-tabs-skin-minimal .ui-state-default a, .wordpress-post-tabs-skin-minimal .ui-state-default a:link, .wordpress-post-tabs-skin-minimal .ui-state-default a:visited { color: #444444; text-decoration: none; }
+.wordpress-post-tabs-skin-minimal .ui-state-hover { border: 1px solid #dddddd; background: #f9f9f9; font-weight: normal; color: #444444; }
+.wordpress-post-tabs-skin-minimal .ui-state-hover a, .wordpress-post-tabs-skin-minimal .ui-state-hover a:hover, .wordpress-post-tabs-skin-minimal .ui-state-hover a:link, .wordpress-post-tabs-skin-minimal .ui-state-hover a:visited { color: #444444; text-decoration: none; }
+.wordpress-post-tabs-skin-minimal .ui-state-active, .wordpress-post-tabs-skin-minimal .ui-widget-content .ui-state-active, .wordpress-post-tabs-skin-minimal .ui-widget-header .ui-state-active { border: 1px solid #000000; background: #000000; font-weight: normal; color: #ffffff; }
+.wordpress-post-tabs-skin-minimal .ui-state-active a, .wordpress-post-tabs-skin-minimal .ui-state-active a:link, .wordpress-post-tabs-skin-minimal .ui-state-active a:visited { color: #ffffff; text-decoration: none; }
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.wordpress-post-tabs-skin-minimal .ui-corner-all, .wordpress-post-tabs-skin-minimal .ui-corner-top, .wordpress-post-tabs-skin-minimal .ui-corner-left, .wordpress-post-tabs-skin-minimal .ui-corner-tl { -moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; -khtml-border-top-left-radius: 0px; border-top-left-radius: 0px; }
+.wordpress-post-tabs-skin-minimal .ui-corner-all, .wordpress-post-tabs-skin-minimal .ui-corner-top, .wordpress-post-tabs-skin-minimal .ui-corner-right, .wordpress-post-tabs-skin-minimal .ui-corner-tr { -moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; -khtml-border-top-right-radius: 0px; border-top-right-radius: 0px; }
+.wordpress-post-tabs-skin-minimal .ui-corner-all, .wordpress-post-tabs-skin-minimal .ui-corner-bottom, .wordpress-post-tabs-skin-minimal .ui-corner-left, .wordpress-post-tabs-skin-minimal .ui-corner-bl { -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; -khtml-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; }
+.wordpress-post-tabs-skin-minimal .ui-corner-all, .wordpress-post-tabs-skin-minimal .ui-corner-bottom, .wordpress-post-tabs-skin-minimal .ui-corner-right, .wordpress-post-tabs-skin-minimal .ui-corner-br { -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; -khtml-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; }
+
+/**************************************************
+* .wordpress-post-tabs-skin-minimal ui-tabs *
+**************************************************/
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav { list-style: none; position: relative; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li { position: relative; list-style:none !important}
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li.ui-state-active a, .wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-nav li a, .wordpress-post-tabs-skin-minimal .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-state-active a { cursor: pointer; border:none;} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-panel {display: block;}
+/*So that Google maps within tabs are visible*/
+.wordpress-post-tabs-skin-minimal .ui-tabs .ui-tabs-hide { position: absolute; left: -10000px; }
+
+/*Start - Link*/
+.wordpress-post-tabs-skin-minimal .wpts_ext {list-style: none; float: left; position: relative; top: 0; margin: 1px .2em 0 0;padding: 0; white-space: nowrap; border: 1px solid #dddddd; background: #eeeeee; font-weight: normal; color: #444444;}
+.wordpress-post-tabs-skin-minimal .wpts_ext a{ float: left; padding: .5em 1em; color: #444444; text-decoration: none;border:none;}
+.wordpress-post-tabs-skin-minimal .wpts_ext_icon {content:url(images/external_link.png); width: 12px; margin-left: 5px;vertical-align: top;}
+/*End - Link CSS*/
+
+/*Left Sided Tabs*/
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left{padding:0;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .ui-tabs-nav { float: left; padding: 0 2px 0 .2em;border-right:0px;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing: border-box;max-width:30%;width:100%;}
+.wordpress-post-tabs-skin-minimal  .ui-tabs-vertical-left .ui-tabs-nav li, .wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .wpts_ext { float: left; clear: left; width: 100%; border-bottom-width: 1px !important; margin: 0.2em 0 0.2em 0; white-space:normal;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .ui-tabs-nav li a, .wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .wpts_ext a { display:block; padding:.5em 10%;width:80%;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .ui-tabs-nav li.ui-state-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .ui-tabs-panel { padding: 0; float: right; width: 70%;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .ui-tabs-nav li.ui-state-active { border-right:0px;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-left .wpts_ext{}
+
+/*Right Sided Tabs*/
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right{padding:0;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-nav { float: right; padding: 0 .2em 0 2px; border-left:0px;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing: border-box;max-width:30%;width:100%;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-nav li, .wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .wpts_ext { float: right; clear: right; width: 100%; border-bottom-width: 1px !important; border-left-width: 1px !important; margin: .2em 0 .2em 0; white-space:normal;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-nav li a, .wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .wpts_ext a { display:block; padding:.5em 10%;width:80%;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-nav li.ui-state-active { padding-bottom: 0; padding-left: .1em; border-left-width: 1px; border-left-width: 1px; }
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-panel { padding: 0; float: left; width: 70%;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .ui-tabs-nav li.ui-state-active {border-left:0px;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-vertical-right .wpts_ext{}
+
+/*Top Tabs */
+.wordpress-post-tabs-skin-minimal .ui-corner-top, .wordpress-post-tabs-skin-minimal .ui-tabs-horizontal-top .wpts_ext {border-top-width: 1px !important; border-bottom-width: 0px !important;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-horizontal-top .wpts_ext{}
+
+/*Bottom Tabs */
+.wordpress-post-tabs-skin-minimal .ui-tabs-horizontal-bottom .ui-tabs-nav { padding: 0 .2em .2em .2em; }
+.wordpress-post-tabs-skin-minimal .ui-corner-bottom, .wordpress-post-tabs-skin-minimal .ui-tabs-horizontal-bottom .wpts_ext{border-top-width: 0px !important; border-bottom-width: 1px !important;}
+.wordpress-post-tabs-skin-minimal .ui-tabs-horizontal-bottom .wpts_ext{}
+
+/*Prev Next Button*/
+.wordpress-post-tabs-skin-minimal a.wpts-mover { border: 1px solid #000000; background: #000000; font-weight: normal; color: #ffffff;  padding: 3px 6px; text-decoration: none;margin-bottom:0.8em;}
+
+/************************************************
+* WPTS PRO Basic Styles
+************************************************/
+.wordpress-post-tabs-skin-minimal .wpts_spacer{margin:5px 0 0 0 !important}
+.wpts-hide .wordpress-post-tabs-skin-minimal{ display: none; }
+.wordpress-post-tabs-skin-minimal .wpts-next-tab{ float:right;}
+.wordpress-post-tabs-skin-minimal .wpts-prev-tab{ float:left;}
+.wordpress-post-tabs-skin-minimal .wpts_cl{display:block;visibility:hidden;clear:left;height:0;content:".";}
+.wordpress-post-tabs-skin-minimal .wpts_cr{display:block;visibility:hidden;clear:right;height:0;content:".";}

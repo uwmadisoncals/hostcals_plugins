@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'pf_dintext_proregular';
+	src: url('../font/pfdintextpro-regular-webfont.eot');
+	src: url('../font/pfdintextpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/pfdintextpro-regular-webfont.woff') format('woff'),
+	url('../font/pfdintextpro-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#0088cc;
+	font-family: "pf_dintext_proregular", "PF DinText Pro", Arial;
+	font-weight: normal;
+}
+h3 {
+	color:#333333;
+}
+header {
+	background: url('../img/header.gif') top left repeat;
+	color:#FFFFFF;
+}
+header .container {
+	padding:60px 0px;
+}
+header p.lead {
+	height:58px;
+	line-height: 58px;
+	margin:0;
+	color:#878585;
+}
+header h1 {
+	color:#FFFFFF;
+	margin-bottom: 0px;
+}
+footer {
+	background-color:#EEEEEE;
+}
+footer .container {
+	padding-top:10px;
+}
+section { padding-top: 10px }
+.page-header {
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+}
+.doc-side {
+	padding-top:0px;
+}
+.doc-sidenav-cont {
+	padding-top:30px;
+	width: 230px;
+}
+.doc-sidenav {
+	font-family: Arial;
+	font-size:14px;
+	padding-left: 25px;
+	display: block;
+}
+.doc-sidenav li {
+}
+.doc-sidenav li a {
+	padding-top:0px;
+	padding-bottom:0px;
+	line-height: 35px;
+	height:35px;
+	text-decoration: underline;
+	margin-left:-25px;
+	padding-left:25px;
+	color:#0088cc;
+}
+.doc-sidenav li.active a {
+	background:url('../img/menu-hover.gif') top left repeat;
+	text-decoration: none;
+}
+.doc-sidenav li.active a .icon-chevron-right {
+	display: block;
+}
+.doc-sidenav li a:hover {
+	background-color:inherit;
+}
+.doc-sidenav li a .icon-chevron-right {
+	float:right;
+	margin-top:8px;
+	display: none;
+}
+.doc-sidenav-cont.affix {
+	top: 0px;
+}
+a.doc-demo {
+	display: inline-block;
+	height:67px;
+	line-height: 67px;
+	color:#FFFFFF;
+	font-family: "pf_dintext_proregular", "PF DinText Pro", Arial;
+	font-size: 20px;
+	text-decoration: none;
+	padding-left:25px;
+	padding-right: 80px;
+	background:url('../img/demo-btn.jpg') top right no-repeat;
+}
+a.doc-demo:hover {
+	background:url('../img/demo-btn.jpg') right -70px no-repeat;
+}
+.doc-thumbnails {
+
+}
+.doc-thumbnails .span4 {
+	background-color:#0088cc;
+}
+.doc-thumbnails .caption {
+	padding:0px 20px;
+	color:#a1d3ec;
+}
+.doc-thumbnails .caption h3 {
+	color:#FFFFFF;
+	margin:0px 0px 0px 0px;
+}

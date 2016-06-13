@@ -1,0 +1,231 @@
+/* CSS used for styling the Settings form */
+form#wpts_form fieldset{margin:0px 0 10px 0px;background:#eee;border:0px;padding:10px 20px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
+form#wpts_form legend{padding:12px 9px 19px;margin:-10px 0 0 30px;background:#efefef;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;background: #fafafa;}
+form#wpts_form legend span{font-size:100%;font-weight:bold;color:#fff;background:#444;-moz-border-radius-topleft:10px;-webkit-border-top-left-radius:10px;-moz-border-radius-topright:10px;-webkit-border-top-right-radius:10px;border-top-right-radius:10px;padding:5px 11px 0;}
+form#wpts_form{font-family:sans-serif;font-size:100%;color:#666;}
+form#wpts_form label {}
+form#wpts_form input[type="text"] 	{color:#666;border:1px solid #d8d8d8;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px;padding:3px 10px;}
+
+form#wpts_form select {color:#666;border:1px solid #d8d8d8;-moz-border-radius:9px;-webkit-border-radius:9px;border-radius:9px;text-transform: capitalize;}
+form#wpts_form option{display:block;color:#666;}
+
+form#wpts_form input[type="checkbox"] {background:none;border: 1px solid #999999;width:14px;height:14px;}
+form#wpts_form input[type="radio"]    {background:none;border:0px;width:14px;height:14px;}
+
+input[type="text"]:disabled {opacity: .5;border:1px solid #eee !important;filter: alpha(opacity=50);}
+
+form#wpts_form textarea {color:#666;font-size:110%;font-family:arial;border:1px solid #d8d8d8;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;padding:2px 10px;margin-bottom:10px;}
+form#wpts_form .faulty_field {background:#fff4f4 !important;color:#ff0000;border:1px solid #ff0000 !important;}
+form#wpts_form label span {color:#ff0000;font-size:85%;}
+
+/*For Tooltip*/
+.moreInfo {
+    position: relative;
+	font-weight:bold;
+	vertical-align:top;
+}
+.trigger{
+	padding:0px 3px;
+	border:1px solid #ccc;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+	cursor:help;
+	border-color: #298CBA;
+	font-weight: bold;
+	color: white;
+	background: #21759B;
+	text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+	vertical-align:top;
+}
+.tooltip {
+    position: absolute;
+	top:-12px;
+	left:25px;
+	z-index:999;
+	width:25em;
+	background:#EFEBCE;
+	font-size:12px;
+	color:#333;
+	border:0px;padding:15px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;
+	display: none; /* keeps the tooltip hidden if no JS available */
+}
+/************************************************
+ * menu
+ *
+*************************************************/
+.menu { padding: 0; zoom: 1; }
+.menu.menu-nav { list-style: none; position: relative; padding: 0;float:left; max-width: 15%;width: 100%;outline: none;background-color: rgba(238, 238, 238, 1);bottom: 0;-moz-box-shadow: inset 0 0 5px #aaa;-ms-box-shadow: inset 0 0 5px #aaa;-o-box-shadow: inset 0 0 5px #aaa;-webkit-box-shadow: inset 0 0 5px #aaa;box-shadow: inset 0 0 5px #aaa;margin-top: 1%;}
+.menu.menu-nav div { position: relative; float: left; border-bottom-width: 1px !important; margin: 0 0 0 0; padding: 0;width: 100%;border-bottom: 1px solid #e4e4e4;outline: none;}
+.menu.menu-nav div a { float: left; text-decoration: none; padding: .5em 1em; color:rgba(51, 51, 51, 0.75);outline: none; font-weight:bold;}
+.menu.menu-nav div.menu-selected { border-bottom-width: 0; background-color:#ABD37E;}
+.menu.menu-nav div.menu-selected a, .menu .menu-nav div.ui-state-disabled a, .menu .menu-nav div.ui-state-processing a { cursor: text; color:#FFF;}
+.menu.menu-nav div.active {background-color: #00c0e4;
+-moz-box-shadow: -5px 0 5px #aaa;
+-ms-box-shadow: -5px 0 5px #aaa;
+-o-box-shadow: -5px 0 5px #aaa;
+ -webkit-box-shadow: -5px 0 5px #aaa; 
+box-shadow: -5px 0 5px #aaa;}
+.menu.menu-nav div.active a{color:#ffffff;}
+.menu.menu-nav div a, .menu.menu-collapsible .menu-nav div.menu-selected a { cursor: pointer;text-transform: capitalize; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.menu.menu-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.menu.menu-hide { display: none !important; }
+/****************menu End*************************/
+/*---------------Skin Settings----------------------*/
+.wpts-skin-settings {margin-left: 1%;float: left;width: 60%; background: #ffffff;}
+.wpts-menu {background-color: rgba(238, 238, 238, 1);bottom: 0;-moz-box-shadow: inset 0 0 5px #aaa;-ms-box-shadow: inset 0 0 5px #aaa;-o-box-shadow: inset 0 0 5px #aaa;-webkit-box-shadow: inset 0 0 5px #aaa;box-shadow: inset 0 0 5px #aaa;}
+.sub-heading {
+background-color: #dedede;
+padding: 10px;
+font-family: Georgia,serif;
+font-size: 16px;
+font-weight: normal;
+color: #333;
+width: 97%;
+letter-spacing: 1px;
+}
+.wpts-skin-settings .skin_title { background: rgba(238, 238, 238, 1);height: 10%;}
+.wpts-skin-settings .skin_title .skin_head {margin-left: 30%;padding-top: .5em;}
+.wpts-skin-settings h2 span {color: #00c0e4;text-transform: capitalize;}
+/*-----------------End Skin Settings----------------*/
+.error {
+ border: 1px solid red !important;
+}
+/************************************************
+*	ui-tabs  									*
+************************************************/
+.ui-tabs { padding: .2em; zoom: 1; }
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; max-width: 15%;width: 100%;outline: none;}
+.ui-tabs .ui-tabs-nav li { position: relative; float: left; border-bottom-width: 1px !important; margin: 0 0 .2em 0; padding: 0;  background-color:#B9B9B9;width: 100%;border-bottom: 1px solid #444;outline: none;}
+.ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 1em; color:#FFFFFF;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { border-bottom-width: 0; background-color:#ABD37E;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color:#FFF;}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+/*tabs complete*/
+#sldr_message {background-color:#FEF7DA;clear:both;width:72%;}
+#sldr_close {float:right;} 
+
+.color-picker-wrap {
+	position: absolute;
+	display: none; 
+	background: #fff;
+	border: 3px solid #ccc;
+	padding: 3px;
+	z-index: 1000;
+}
+.wpts_options_time{display:none;}
+
+/****--------------------------------------------------------------****/
+/*----------------------------successModal CSS-----------------------*/
+.successModal {
+    display: block;
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    width: 300px;
+    height: auto;
+    padding: 5px 20px;
+    border: 3px solid #00c0e4;
+    background-color: #EFE;
+    z-index:1002;
+    overflow: auto;
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px;
+    -moz-box-shadow: 5px 5px 10px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px #cfcfcf;
+}
+/* Import And Export Settings */
+.tvilla_button {
+	background: #333 !important;
+	color: #fff !important;
+	font-size: 13px;
+	width: 100%;
+	text-align: left;
+	border: 0 !important;
+	padding: 10px 5%;
+	font-weight: bold;
+	cursor: pointer;
+}
+a.tvilla_button {
+	text-decoration: none;
+	display: block;
+	margin-right: 10px;
+	width: 100%;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Heading */
+#poststuff .hndle {
+	font-size: 20px;
+	font-family: thohama;
+}
+.postbox .hndle {
+	font-size: 20px;
+	font-family: thohama;
+	padding: 8px 12px;
+}
+.top_head {
+	width:65%;margin-top: 15px;
+}
+.top_head .wpts_title {
+	font-size: 26px;
+}
+/* Table */
+.form-table tr.row th {
+ padding: 10px 10px 5px 10px;
+}
+.form-table tr.row td {
+ padding: 10px 10px 5px 10px;
+}
+.form-table tr.row { 
+		background: #ffffff;
+		
+	}
+.form-table tr.row.even{ 
+		background: #eeeeee;
+	}
+/******************/
+.right_panel {
+	float:left;width:30%;padding-left:20px;max-width: 280px;
+}
+.left_panel {
+	float:left;width:65%;
+}
+.right_panel_skins {
+	width: 20%;float: left;margin-left: 1%;max-width: 280px;
+}
+/* For Responsive Design */
+.postbox { min-width: 0;}
+
+@media only screen and (max-width: 480px) {
+	.right_panel {
+		width:100%;padding-left:0px;
+	}
+.left_panel {
+		width:100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.menu.menu-nav {
+		max-width: 25%;
+	}
+	.right_panel_skins {
+		width: 70%;float: left;margin-top:2%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.menu.menu-nav {
+		max-width: 35%;
+	}
+	.right_panel_skins {
+		width: 95%;float: left;margin-top:2%;
+	}
+	.top_head img {
+		width: 50%;
+	}
+	.top_head .wpts_title {
+		font-size: 14px;
+	}
+	.wpts-skin-settings .skin_title .skin_head { font-size: 13px;}
+}

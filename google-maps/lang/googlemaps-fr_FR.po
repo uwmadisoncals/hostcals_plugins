@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google maps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-12-19 20:21+0100\n"
+"PO-Revision-Date: 2009-12-19 20:21+0100\n"
+"Last-Translator: Pierre\n"
+"Language-Team: Pierre\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../directions.php:40
+#: ../directions.php:47
+msgid "Error: "
+msgstr "Erreur : "
+
+#: ../directions.php:41
+#: ../markers.php:61
+msgid "Info: "
+msgstr "Info : "
+
+#: ../directions.php:48
+msgid "On: "
+msgstr "Sur : "
+
+#: ../directions.php:61
+#: ../kml.php:44
+#: ../maps.php:47
+#: ../markers.php:115
+msgid "Zoom in"
+msgstr "Agrandir le plan"
+
+#: ../directions.php:66
+#: ../kml.php:49
+#: ../maps.php:52
+#: ../markers.php:120
+msgid "Sorry, your browser can't display Google Maps..."
+msgstr "Désolé, votre navigateur ne peut afficher des cartes Google..."
+
+#: ../googlemaps.php:85
+msgid "Loading..."
+msgstr "Chargement en cours..."
+
+#: ../googlemaps.php:86
+msgid "Be careful to see the map you have to activate the Javascript!"
+msgstr "Attention pour afficher la carte vous devez activer le Javascript !"
+
+#: ../googlemaps.php:90
+msgid "Photos"
+msgstr ""
+
+#: ../googlemaps.php:91
+msgid "Videos"
+msgstr "Vidéos"
+
+#: ../googlemaps.php:92
+msgid "Wikipedia"
+msgstr ""
+
+#: ../googlemaps.php:93
+msgid "Webcams"
+msgstr ""
+
+#: ../googlemaps.php:95
+msgid "Hide all"
+msgstr "Tout masquer"
+
+#: ../googlemaps.php:116
+msgid "No Access for you!"
+msgstr "Interdit !"
+
+#: ../googlemaps.php:120
+msgid "Google Maps Embedded"
+msgstr "Cartes Google Intégrées"
+
+#: ../googlemaps.php:126
+msgid "GoogleMaps Parameters"
+msgstr "Paramètres GoogleMaps"
+
+#: ../googlemaps.php:128
+msgid "Key"
+msgstr "Clé"
+
+#: ../googlemaps.php:131
+msgid "Type here the API key furnish by Google. If you haven't yet get one, <a href=\"http://code.google.com/intl/fr/apis/maps/signup.html\" target=\"_blank\">click here</a> for sign up, then copy-paste your given key in the field above."
+msgstr "Saisissez ici la clé API fournit par Google. Si vous n'en avez pas encore, <a href=\"http://code.google.com/intl/fr/apis/maps/signup.html\" target=\"_blank\">cliquez ici</a> pour vous enregistrer, puis copier-coller votre clé dans le champs ci-dessus."
+
+#: ../googlemaps.php:133
+msgid "Width"
+msgstr "Largeur"
+
+#: ../googlemaps.php:134
+#: ../googlemaps.php:138
+msgid "in pixel or percentage (example <b>250px</b> or <b>95%</b>)"
+msgstr "en pixels ou en pourcentage (exemple <b>250px</b> ou <b>95%</b>)"
+
+#: ../googlemaps.php:135
+msgid "Width by default of your Google map"
+msgstr "Largeur par défaut de votre carte Google"
+
+#: ../googlemaps.php:137
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../googlemaps.php:139
+msgid "Height by default of your Google map"
+msgstr "Hauteur par défaut de votre carte Google"
+
+#: ../googlemaps.php:142
+msgid "Use the button <i>More</i>"
+msgstr "Utiliser le bouton <i>Plus</i>"
+
+#: ../googlemaps.php:143
+msgid "Check this if you want to add the possibility to show more layers on maps."
+msgstr "Cochez ceci si vous souhaitez ajouter la possibilité d'afficher des couches supplémentaires sur les cartes."
+
+#: ../googlemaps.php:149
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../googlemaps.php:157
+msgid "Settings"
+msgstr ""
+
+#: ../googlemaps.php:169
+msgid "Cheatin' uh ?"
+msgstr "On triche ?"
+
+#: ../googlemaps.php:180
+msgid "Google Maps"
+msgstr "Cartes Google"
+
+#: ../markers.php:9
+#: ../markers.php:15
+msgid "Approximate placement"
+msgstr "Placement approximatif"
+
+#: ../markers.php:59
+msgid "Impossible To GeoCode:"
+msgstr "Impossible de GéoCoder :"
+
+#: ../markers.php:60
+msgid "Error Code: "
+msgstr "Code d'erreur : "
+
+#: ../more.php:135
+msgid "Show/Hide Layers"
+msgstr "Afficher/Masquer les ajouts"
+
+#: ../more.php:141
+msgid "More..."
+msgstr "Plus..."
+
+#~ msgid "Type here the API key furnish by Google"
+#~ msgstr "Saisissez ici la clé API fournit par Google"
+
